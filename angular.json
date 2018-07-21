@@ -72,6 +72,9 @@
           "configurations": {
             "production": {
               "browserTarget": "payment-system-frontend:build:production"
+            },
+            "staging": {
+              "browserTarget": "payment-system-frontend:build:staging"
             }
           }
         },

@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/assets/images/background.png");
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  width: 1920px;
+  height: 1280px;
+}
+
+.logo {
+  position: absolute;
+  top: 78px;
+  left: 98px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(0, 227, 254, 0);
+}
+
+.navbar {
+  display: block;
+  margin-top: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.navbar a:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #FFCC00;
+  background-color: #FFFFFF;
+}
+
+.menu-icon-top {
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: 1786px;
+  width: 34px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.menu-icon-middle {
+  display: block;
+  position: absolute;
+  top: 96px;
+  left: 1790px;
+  width: 30px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.menu-icon-bottom {
+  display: block;
+  position: absolute;
+  top: 104px;
+  left: 1786px;
+  width: 34px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+hr.nav-separator {
+  position: absolute;
+  top: 194px;
+  left: 100px;
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 1721px;
+  height: 1px;
+  border: 0;
+}
+
+.content-container {
+  margin-left: 98px;
+  margin-right: 98px;
+  padding: 0;
+}
+
+section.content {
+  position: absolute;
+  width: 1721px;
+  top: 300px;
+}
