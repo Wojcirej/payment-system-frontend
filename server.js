@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+require('dotenv').config();
 var app = express();
 app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', (req, res) => {
