@@ -1,0 +1,26 @@
+.employee-list {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.employee-list tr {
+  text-align: center;
+  border: 1px solid #DDD;
+}
+
+.employee-list tr:hover {
+  font-weight: 700;
+  background-color: #F5F5F5;
+  color: #000000;
+}
+
+.employee-list th, td {
+  padding: 8px;
+}
+
+.employee-list td:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFCC00;
+}

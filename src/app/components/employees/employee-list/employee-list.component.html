@@ -1,3 +1,22 @@
-<p>
-  Hello from Employee's list component!
-</p>
+<table class="employee-list">
+  <thead>
+    <th>ID</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Address</th>
+    <th>Contract type</th>
+    <th>Salary</th>
+    <th>Provision</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td>{{row['id']}}</td>
+      <td>{{row['firstName']}}</td>
+      <td>{{row['lastName']}}</td>
+      <td>{{row['address']}}</td>
+      <td>{{row['contractType']}}</td>
+      <td>{{row['salary']}}</td>
+      <td>{{row['provision']}}</td>
+    </tr>
+  </tbody>
+</table>
