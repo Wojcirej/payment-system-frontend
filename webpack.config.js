@@ -22,8 +22,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: 'html-loader'
+        test: /.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options:
+            {
+              minimize: false,
+              removeComments: false,
+              collapseWhitespace: false,
+              removeAttributeQuotes: false,
+            }
+          }
+        ],
       },
       {
         test: /\.css$/,
