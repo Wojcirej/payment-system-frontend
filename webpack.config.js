@@ -41,6 +41,10 @@ module.exports = {
         use: ['to-string-loader', 'style-loader', 'css-loader']
       },
       {
+        test: /\.scss$/,
+        use: ['to-string-loader', 'style-loader', 'css-loader', 'sass-loader']
+      },
+      {
         test: /\.ts$/,
         use: ['ts-loader', 'angular2-template-loader'],
         exclude: [ './node_modules/']

@@ -6,7 +6,7 @@ import { Employee } from '../../../models/employee';
 @Component({
   selector: 'app-single-employee',
   templateUrl: './single-employee.component.html',
-  styleUrls: ['./single-employee.component.css']
+  styleUrls: ['./single-employee.component.scss']
 })
 export class SingleEmployeeComponent implements OnInit {
   public employee: Employee = new Employee();

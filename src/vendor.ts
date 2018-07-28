@@ -6,4 +6,4 @@ import '@angular/http';
 import '@angular/router';
 
 import 'rxjs';
-import './styles.css';
+import './styles.scss';
