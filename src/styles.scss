@@ -6,14 +6,14 @@ body {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  width: 1920px;
-  height: 1280px;
+  width: 100%;
+  height: 56.1%;
 }
 
 .logo {
   position: absolute;
-  top: 78px;
-  left: 98px;
+  top: 3.42105263158%;
+  left: 5.10416666667%;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -22,10 +22,10 @@ body {
 
 .navbar {
   display: block;
-  margin-top: 92px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  height: 11px;
+  height: 0.482456140351%;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875em;
   font-weight: 700;
@@ -45,11 +45,17 @@ body {
   background-color: #FFFFFF;
 }
 
+.hamburger {
+  position: absolute;
+  top: 3.77192982456%;
+  left: calc(94.7395833334% - 34px);
+  display: none;
+}
+
 .menu-icon-top {
   display: block;
   position: absolute;
-  top: 86px;
-  left: 1786px;
+  top: 0;
   width: 34px;
   height: 3px;
   background-color: #FFFFFF;
@@ -58,8 +64,8 @@ body {
 .menu-icon-middle {
   display: block;
   position: absolute;
-  top: 96px;
-  left: 1790px;
+  top: 10px;
+  left: 3px;
   width: 30px;
   height: 3px;
   background-color: #FFFFFF;
@@ -68,8 +74,7 @@ body {
 .menu-icon-bottom {
   display: block;
   position: absolute;
-  top: 104px;
-  left: 1786px;
+  top: 20px;
   width: 34px;
   height: 3px;
   background-color: #FFFFFF;
@@ -78,21 +83,21 @@ body {
 hr.nav-separator {
   position: absolute;
   top: 194px;
-  left: 100px;
+  left: 5.10416666667%;
   background-color: rgba(255, 255, 255, 0.24);
-  width: 1721px;
+  width: 89.6354166667%;
   height: 1px;
   border: 0;
 }
 
 .content-container {
-  margin-left: 98px;
-  margin-right: 98px;
+  margin-left: 5.10416666667%;
+  margin-right: 5.10416666667%;
   padding: 0;
 }
 
 section.content {
   position: absolute;
-  width: 1721px;
+  width: 89.6354166667%;
   top: 300px;
 }
