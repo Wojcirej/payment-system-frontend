@@ -1,0 +1,59 @@
+.employee-details-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.employee-details-header {
+  position: relative;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.employee-details-content {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+.employee-details-column {
+  position: absolute;
+  top: 60px;
+  width: 50%;
+}
+
+.employee-details-row {
+  min-height: 55px;
+}
+
+.employee-details-row:hover {
+  font-size: 1.5em;
+  background-color: #000000;
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  left: 50%;
+}
+
+.employee-details-label {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+hr.footer-separator {
+  position: relative;
+  top: 250px;
+  background-color: rgba(255, 255, 255, 0.24);
+  height: 1px;
+  border: 0;
+}
+
+.employee-details-footer {
+  position: relative;
+  top: 182px;
+}

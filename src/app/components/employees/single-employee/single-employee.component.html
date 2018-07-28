@@ -1,0 +1,41 @@
+<article class="employee-details-container">
+  <header class="employee-details-header">
+    {{employee.firstName}} {{employee.lastName}} employee summary
+  </header>
+
+  <main class="employee-details-content">
+    <section class="employee-details-column left">
+
+      <section class="employee-details-row">
+        <header class="employee-details-label">Name</header>
+        <p>{{employee.firstName}} {{employee.lastName}}</p>
+      </section>
+
+      <section class="employee-details-row">
+        <header class="employee-details-label">Contract type</header>
+        <p>{{employee.contractType}}</p>
+      </section>
+    </section>
+
+    <section class="employee-details-column right">
+
+      <section class="employee-details-row">
+        <header class="employee-details-label">Address</header>
+        <p>{{employee.address}}</p>
+      </section>
+
+      <section class="employee-details-row">
+        <header class="employee-details-label">Salary</header>
+        <p>{{employee.salary}}</p>
+      </section>
+    </section>
+  </main>
+
+  <hr class="footer-separator">
+
+  <footer class="employee-details-footer">
+    <nav class="navbar">
+      <a routerLink="/employees">Back to employee's list</a>
+    </nav>
+  </footer>
+</article>

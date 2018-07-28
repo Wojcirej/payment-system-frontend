@@ -24,3 +24,22 @@
   text-decoration: underline;
   text-decoration-color: #FFCC00;
 }
+
+.details-button {
+  padding: 5px 15px 5px 15px;
+  height: 30px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.details-button:hover {
+  background-color: #2F6A31;
+  box-shadow: 2px 4px rgba(38, 38, 38, 0.3);
+}

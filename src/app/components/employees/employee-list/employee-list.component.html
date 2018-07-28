@@ -7,6 +7,7 @@
     <th>Contract type</th>
     <th>Salary</th>
     <th>Provision</th>
+    <th></th>
   </thead>
   <tbody>
     <tr *ngFor="let row of rows">
@@ -17,6 +18,7 @@
       <td>{{row['contractType']}}</td>
       <td>{{row['salary']}}</td>
       <td>{{row['provision']}}</td>
+      <td><a class="details-button" routerLink="/employees/{{row['id']}}">Details</a></td>
     </tr>
   </tbody>
 </table>
