@@ -7,12 +7,14 @@ import { ApiService } from './services/api/api.service';
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './components/employees/employee-list/employee-list.component';
 import { SingleEmployeeComponent } from './components/employees/single-employee/single-employee.component';
+import { TopNavigationBar } from './presenters/top-navigation-bar/top-navigation-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    SingleEmployeeComponent
+    SingleEmployeeComponent,
+    TopNavigationBar
   ],
   imports: [
     BrowserModule,

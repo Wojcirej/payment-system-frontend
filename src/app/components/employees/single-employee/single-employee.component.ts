@@ -19,7 +19,7 @@ export class SingleEmployeeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.idSubscription = this.acRoute.params.subscribe((response: any) =>{
       if (response && response.id) {
-        this. employeeSubscription = this.apiService.get("employees/" + response.id).subscribe((response: any) => {
+        this.employeeSubscription = this.apiService.get("employees/" + response.id).subscribe((response: any) => {
           this.employee = response.data;
         });
       }
