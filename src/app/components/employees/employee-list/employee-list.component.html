@@ -1,3 +1,5 @@
+<pagination [data]="paginationData" endpoint="employees" (page)="setPage($event)" (perPage)="setItemsPerPage($event)"></pagination>
+
 <table class="employee-list">
   <thead>
     <th>ID</th>

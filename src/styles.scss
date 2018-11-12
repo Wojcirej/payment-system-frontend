@@ -1,9 +1,11 @@
+@import 'colors';
+
 body {
   margin: 0px;
   padding: 0px;
   background-image: url("/assets/images/background.png");
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: $white;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   width: 100%;
@@ -17,7 +19,7 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background-color: rgba(0, 227, 254, 0);
+  background-color: $background-color;
 }
 
 .content-container {

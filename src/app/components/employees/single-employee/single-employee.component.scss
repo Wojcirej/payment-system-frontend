@@ -1,3 +1,8 @@
+@import './../../../../colors';
+
+$separator-color: $middle-grey;
+$row-hover-color: $black;
+
 .employee-details {
 
   &-container {
@@ -27,11 +32,11 @@
 
   &-row {
     min-height: 55px;
-  }
 
-  &-row:hover {
-    font-size: 1.5em;
-    background-color: #000000;
+    &:hover {
+      font-size: 1.5em;
+      background-color: $row-hover-color;
+    }
   }
 
   &-label {
@@ -58,7 +63,7 @@
 hr.footer-separator {
   position: relative;
   top: 250px;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: $separator-color;
   height: 1px;
   border: 0;
 }

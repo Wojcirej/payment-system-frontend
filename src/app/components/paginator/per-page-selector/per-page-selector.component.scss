@@ -1,0 +1,22 @@
+@import './../../../../colors';
+
+$label-color: $black;
+$select-text-color: $white;
+$select-background-color: $green;
+
+.per-page {
+
+  &-label {
+    color: $label-color;
+  }
+
+  &-select {
+    border: 0;
+    width: 100px;
+    font-size: 1em;
+    color: $select-text-color;
+    background-color: $select-background-color;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}

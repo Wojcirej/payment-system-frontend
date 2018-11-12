@@ -1,0 +1,5 @@
+<div class="pages">
+  <a [hidden]="previousPage == null" (click)="pickPage(previousPage)">&laquo;</a>
+  <a *ngFor="let page of pages" (ngModel)="pickedPage" (click)="pickPage(page)" [ngClass]="{'active': page == currentPage}">{{page}}</a>
+  <a [hidden]="nextPage == null" (click)="pickPage(nextPage)">&raquo;</a>
+</div>

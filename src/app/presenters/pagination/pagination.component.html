@@ -1,0 +1,6 @@
+<div class="pagination-wrapper">
+  <paginator-pages-selector [data]="paginationData" endpoint="{{endpoint}}" (selectedPage)="setPage($event)"></paginator-pages-selector>
+</div>
+<div class="pagination-wrapper">
+  <paginator-per-page-selector (itemsPerPage)="setItemsPerPage($event)"></paginator-per-page-selector>
+</div>

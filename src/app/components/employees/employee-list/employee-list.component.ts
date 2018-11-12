@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnDestroy, SimpleChanges } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../services/api/api.service';
 import { Employee } from '../../../models/employee';
 import { Subscription } from 'rxjs';
@@ -11,18 +11,38 @@ import { Subscription } from 'rxjs';
 })
 export class EmployeeListComponent implements OnInit, OnDestroy {
   public rows: Array<Employee>;
-  private subscription: Subscription;
+  public paginationData: any;
+  private subscription; pageSubscription; perPageSubscription: Subscription;
+  private page: number;
+  private itemsPerPage: number;
 
-  constructor(public apiService: ApiService, public router: Router) {
+  constructor(public apiService: ApiService) {
   }
 
   ngOnInit() {
-    this.subscription = this.apiService.get("employees").subscribe((response: any) =>{
+    this.fetchList();
+  }
+
+  fetchList() {
+    this.subscription = this.apiService.get("employees?page=" + this.page + "&per_page=" + this.itemsPerPage).subscribe((response: any) =>{
       this.rows = response.data;
+      this.paginationData = response.meta;
     });
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  setPage(page) {
+    this.page = page;
+    console.log("Page from EmployeeListComponent: " + this.page);
+    this.fetchList();
+  }
+
+  setItemsPerPage(itemsPerPage) {
+    this.itemsPerPage = itemsPerPage;
+    console.log("Items per page from EmployeeListComponent: " + this.itemsPerPage);
+    this.fetchList();
   }
 }

@@ -1,0 +1,4 @@
+<p class="per-page-label">Items per page</p>
+<select class="per-page-select" [(ngModel)]="selectedOption" (ngModelChange)="changeItemsPerPage(newValue)">
+  <option *ngFor="let option of options" [ngValue]="option">{{option}}</option>
+</select>

@@ -1,34 +1,44 @@
+@import './../../../../colors';
+
+$table-border-color: $light-grey;
+$table-row-hover-background-color: $white-smoke;
+$table-row-hover-text-color: $black;
+$table-cell-hover-underline-color: $orange;
+$details-button-color: $green;
+$details-button-hover-color: $dark-green;
+$details-button-hover-shadow-color: $near-black;
+
 .employee-list {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-}
 
-.employee-list tr {
-  text-align: center;
-  border: 1px solid #DDD;
-}
+  tr {
+    text-align: center;
+    border: 1px solid $table-border-color;
 
-.employee-list tr:hover {
-  font-weight: 700;
-  background-color: #F5F5F5;
-  color: #000000;
-}
+    &:hover {
+      font-weight: 700;
+      background-color: $table-row-hover-background-color;
+      color: $table-row-hover-text-color;
+    }
+  }
 
-.employee-list th, td {
-  padding: 8px;
-}
+  th, td {
+    padding: 8px;
+  }
 
-.employee-list td:hover {
-  text-decoration: underline;
-  text-decoration-color: #FFCC00;
+  td:hover {
+    text-decoration: underline;
+    text-decoration-color: $table-cell-hover-underline-color;
+  }
 }
 
 .details-button {
   padding: 5px 15px 5px 15px;
   height: 30px;
-  background-color: #4CAF50;
+  background-color: $details-button-color;
   border: none;
   border-radius: 20px;
   color: white;
@@ -37,9 +47,9 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-}
 
-.details-button:hover {
-  background-color: #2F6A31;
-  box-shadow: 2px 4px rgba(38, 38, 38, 0.3);
+  &:hover {
+    background-color: $details-button-hover-color;
+    box-shadow: 2px 4px $details-button-hover-shadow-color;
+  }
 }

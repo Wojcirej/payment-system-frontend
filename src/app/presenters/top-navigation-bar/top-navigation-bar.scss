@@ -1,3 +1,12 @@
+@import './../../../colors';
+
+$navbar-link-color: $white;
+$navbar-link-hovered-color: $black;
+$navbar-link-hovered-underline-color: $orange;
+$navbar-link-hovered-background-color: $white;
+$icon-background-color: $white;
+$separator-color: $light-grey;
+
 .navbar {
   display: block;
   margin-top: 40px;
@@ -11,16 +20,16 @@
 }
 
 .navbar a {
-  color: #FFFFFF;
+  color: $navbar-link-color;
   text-decoration: none;
   padding: 25px;
 }
 
 .navbar a:hover {
-  color: #000000;
+  color: $navbar-link-hovered-color;
   text-decoration: underline;
-  text-decoration-color: #FFCC00;
-  background-color: #FFFFFF;
+  text-decoration-color: $navbar-link-hovered-underline-color;
+  background-color: $navbar-link-hovered-background-color;
 }
 
 .hamburger {
@@ -36,7 +45,7 @@
   top: 0;
   width: 34px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: $icon-background-color;
 }
 
 .menu-icon-middle {
@@ -46,7 +55,7 @@
   left: 3px;
   width: 30px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: $icon-background-color;
 }
 
 .menu-icon-bottom {
@@ -55,14 +64,14 @@
   top: 20px;
   width: 34px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: $icon-background-color;
 }
 
 hr.nav-separator {
   position: absolute;
   top: 194px;
   left: 5.10416666667%;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: $separator-color;
   width: 89.6354166667%;
   height: 1px;
   border: 0;
